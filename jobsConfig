@@ -11,7 +11,7 @@ Jobs:
     description: Earns money felling and planting trees
     ChatColour: GREEN
     chat-display: full
-    max-level: 90
+    max-level: 75
     leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
     income-progression-equation: baseincome*((1.05)^(joblevel-1))
     experience-progression-equation: baseexperience*((1.05)^(joblevel-1))
@@ -94,7 +94,7 @@ Jobs:
     description: Earns money for building structures.
     ChatColour: DARK_RED
     chat-display: full
-    max-level: 90
+    max-level: 75
     leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
     income-progression-equation: baseincome*((1.04)^(joblevel-1))
     experience-progression-equation: baseexperience*((1.04)^(joblevel-1))
@@ -162,7 +162,7 @@ Jobs:
     description: Earns money killing animals and monsters.
     ChatColour: RED
     chat-display: full
-    max-level: 90
+    max-level: 75
     leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
     income-progression-equation: baseincome*((1.05)^(joblevel-1))
     experience-progression-equation: baseexperience*((1.05)^(joblevel-1))
@@ -200,14 +200,14 @@ Jobs:
     description: Earns money from fishing.
     ChatColour: AQUA
     chat-display: full
-    max-level: 90
+    max-level: 75
     leveling-progression-equation: 100*((1.10+(0.01*(numjobs-1)))^(joblevel-1))
     income-progression-equation: baseincome*((1.07)^(joblevel-1))
     experience-progression-equation: baseexperience*((1.05)^(joblevel-1))
     Fish:
       RAW_FISH:
         income: 2.0
-        experience: 15.0
+        experience: 10
   Wizard:
     fullname: Wizard
     shortname: Wi
@@ -316,7 +316,7 @@ Jobs:
     description: Allround Smith
     ChatColour: DARK_PURPLE
     chat-display: full
-    max-level: 90
+    max-level: 75
     leveling-progression-equation: 100*((1.30+(0.01*(numjobs-1)))^(joblevel-1))
     income-progression-equation: baseincome*((1.02)^(joblevel-1))
     experience-progression-equation: baseexperience*((1.02)^(joblevel-1))
@@ -397,6 +397,54 @@ Jobs:
       DIAMOND_SWORD:
         income: 8.0
         experience: 8.0
+        LEATHER_BOOTS:
+        income: 2.0
+        experience: 4.0
+      LEATHER_CHESTPLATE:
+        income: 4.0
+        experience: 8.0
+      LEATHER_HELMET:
+        income: 2.5
+        experience: 5
+      LEATHER_LEGGINGS:
+        income: 3.5
+        experience: 7.0
+      GOLD_BOOTS:
+        income: 8.0
+        experience: 8.0
+      GOLD_CHESTPLATE:
+        income: 16.0
+        experience: 16.0
+      GOLD_HELMET:
+        income: 10.0
+        experience: 10.0
+      GOLD_LEGGINGS:
+        income: 14.0
+        experience: 14.0
+      IRON_BOOTS:
+        income: 4.0
+        experience: 8.0
+      IRON_CHESTPLATE:
+        income: 8.0
+        experience: 16.0
+      IRON_HELMET:
+        income: 5.0
+        experience: 10.0
+      IRON_LEGGINGS:
+        income: 7.0
+        experience: 14.0
+      DIAMOND_BOOTS:
+        income: 12.0
+        experience: 22.0
+      DIAMOND_CHESTPLATE:
+        income: 24.0
+        experience: 40.0
+      DIAMOND_HELMET:
+        income: 15.0
+        experience: 30.0
+      DIAMOND_LEGGINGS:
+        income: 21.0
+        experience: 40.0
     custom-kill:
       Blacksmith:
         income: 10.0
@@ -407,7 +455,7 @@ Jobs:
     description: A true bowman
     ChatColour: DARK_RED
     chat-display: full
-    max-level: 90
+    max-level: 75
     leveling-progression-equation: 100*((1.20+(0.01*(numjobs-1)))^(joblevel-1))
     income-progression-equation: baseincome*((1.03)^(joblevel-1))
     experience-progression-equation: baseexperience*((1.03)^(joblevel-1))
@@ -475,7 +523,7 @@ Jobs:
     description: All round farmer
     ChatColour: DARK_GREEN
     chat-display: full
-    max-level: 90
+    max-level: 75
     leveling-progression-equation: 100*((1.20+(0.01*(numjobs-1)))^(joblevel-1))
     income-progression-equation: baseincome*((1.03)^(joblevel-1))
     experience-progression-equation: baseexperience*((1.02)^(joblevel-1))
@@ -528,7 +576,7 @@ Jobs:
         income: 2.5
         experience: 2.5
       GOLDEN_APPLE:
-        income: 10.0
+        income: 50.0
         experience: 10.0
       MELON_BLOCK:
         income: 2.0
