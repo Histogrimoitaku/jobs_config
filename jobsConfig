@@ -397,7 +397,7 @@ Jobs:
       DIAMOND_SWORD:
         income: 8.0
         experience: 8.0
-        LEATHER_BOOTS:
+      LEATHER_BOOTS:
         income: 2.0
         experience: 4.0
       LEATHER_CHESTPLATE:
