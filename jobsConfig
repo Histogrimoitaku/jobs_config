@@ -19,13 +19,6 @@ Jobs:
       Player:
         income: 7.5
         experience: 7.5
-    permissions:
-      aaaaaatest.node:
-        value: true
-        level: 0
-      aaaaaatest.node2:
-        value: true
-        level: 10
     Break:
       LOG:
         income: 1.0
@@ -62,22 +55,22 @@ Jobs:
         income: 2.0
         experience: 2.0
       IRON_ORE:
-        income: 0
+        income: -2.0
         experience: -5.0
       GOLD_ORE:
-        income: 0
+        income: -2.0
         experience: -6.0
       DIAMOND_ORE:
-        income: 0
+        income: -6.0
         experience: -6.0
       LAPIS_ORE:
-        income: 0
+        income: -4.0
         experience: -5.0
       COAL_ORE:
-        income: 0
+        income: -0.8
         experience: -3.0
       GLOWING_REDSTONE_ORE:
-        income: 0
+        income: -2.0
         experience: -3.0
       MOSSY_COBBLESTONE:
         income: -4.0
@@ -85,9 +78,9 @@ Jobs:
       SAPLING:
         income: 0.5
         experience: 0.5
-      WOOD:
-        income: 1.0
-        experience: 1.0
+      LOG:
+        income: -1.0
+        experience: -1.0
   Worker:
     fullname: Worker
     shortname: Wo
@@ -106,28 +99,28 @@ Jobs:
         income: 0.6
         experience: 1.5
       FENCE:
-        income: 0.6
+        income: 1.0
         experience: 1.5
       WOOL:
         income: 0.8
         experience: 1.5
       STONE:
-        income: 0.8
+        income: 1.0
         experience: 2.25
       GLOWSTONE:
-        income: 0.7
+        income: 1.1
         experience: 3.0
       SANDSTONE:
-        income: 0.6
+        income: 1.0
         experience: 2.0
       GLASS:
-        income: 0.6
-        experience: 3.0
+        income: 1.0
+        experience: 4.0
       BRICK:
-        income: 0.75
+        income: 1.75
         experience: 4.0
       LAPIS_BLOCK:
-        income: 0.8
+        income: 1.8
         experience: 5.0
       DOUBLE_STEP:
         income: 0.6
@@ -136,8 +129,8 @@ Jobs:
         income: 0.6
         experience: 2.0
       BOOKSHELF:
-        income: 1
-        experience: 3.0
+        income: 1.5
+        experience: 6.0
       WOOD_STAIRS:
         income: 0.8
         experience: 2.0
@@ -148,13 +141,16 @@ Jobs:
         income: 0.2
         experience: 5.0
       DIAMOND_BLOCK:
-        income: 0.9
-        experience: 5.0
+        income: 2.5
+        experience: 9.0
       GOLD_BLOCK:
-        income: 0.9
-        experience: 5.0
-      '98':
+        income: 2.0
+        experience: 8.0
+      STONEBRICK:
         income: 0.5
+        experience: 5.0
+      HARD_CLAY:
+        income: 1.75
         experience: 5.0
   Knight:
     fullname: Knight
@@ -206,49 +202,38 @@ Jobs:
     experience-progression-equation: baseexperience*((1.05)^(joblevel-1))
     Fish:
       RAW_FISH:
-        income: 2.0
+        income: 5.0
+        experience: 15
+    Craft:
+      FISHING_ROD:
+        income: 5.0
         experience: 10
   Wizard:
     fullname: Wizard
     shortname: Wi
-    description: IST MAGIC!
+    description: ITS MAGIC!
     ChatColour: LIGHT_PURPLE
     chat-display: full
-    max-level: 90
+    max-level: 75
     leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
     income-progression-equation: baseincome*((1.05)^(joblevel-1))
     experience-progression-equation: baseexperience*((1.05)^(joblevel-1))
-    Brew:
-      NETHER_STALK:
+    Craft:
+      FERMENTED_SPIDER_EYE:
+        income: 1.5
+        experience: 1.5
+      BLAZE_POWDER:
         income: 1.0
         experience: 1.0
-      REDSTONE:
-        income: 2.0
-        experience: 2.0
-      GLOWSTONE_DUST:
-        income: 2.0
-        experience: 2.0
-      SPIDER_EYE:
-        income: 2.0
-        experience: 2.0
-      FERMENTED_SPIDER_EYE:
-        income: 2.0
-        experience: 2.0
-      BLAZE_POWDER:
-        income: 2.0
-        experience: 2.0
       SUGAR:
+        income: 0.5
+        experience: 0.5
+      SPECKLED_MELON:
         income: 2.0
         experience: 2.0
-      SPECKLED_MELON:
-        income: 4.0
-        experience: 4.0
       MAGMA_CREAM:
-        income: 4.0
-        experience: 4.0
-      GHAST_TEAR:
-        income: 4.0
-        experience: 4.0
+        income: 3.0
+        experience: 3.0
     Enchant:
       WOOD_SWORD:
         income: 4.0
@@ -323,7 +308,7 @@ Jobs:
     Craft:
       WOOD_SWORD:
         income: 0.5
-        experience: 1.0
+        experience: 2.0
       STONE_SWORD:
         income: 1.0
         experience: 4.0
@@ -529,14 +514,14 @@ Jobs:
     experience-progression-equation: baseexperience*((1.02)^(joblevel-1))
     Break:
       CROPS-7:
-        income: 0.8
-        experience: 2.0
+        income: 1.5
+        experience: 3.0
       MELON_BLOCK:
         income: 2.0
-        experience: 2.0
+        experience: 4.0
       PUMPKIN:
-        income: 2.0
-        experience: 2.0
+        income: 2.5
+        experience: 4.5
       SNOW:
         income: 1.0
         experience: 1.0
@@ -548,43 +533,61 @@ Jobs:
         income: 2.0
         experience: 2.0
       CROPS-0:
-        income: 0.8
-        experience: 1.5
+        income: 1.0
+        experience: 2.5
       SUGAR_CANE_BLOCK:
-        income: 0.2
-        experience: 0.4
+        income: 0.5
+        experience: 0.8
       SAPLING:
         income: 1.0
-        experience: 1.0
+        experience: 1.5
     Craft:
       BOWL:
-        income: 1.0
-        experience: 1.0
+        income: 2.0
+        experience: 5.0
       MUSHROOM_SOUP:
-        income: 1.5
-        experience: 3.0
+        income: 3.5
+        experience: 8.0
       BREAD:
-        income: 1.5
-        experience: 2.0
+        income: 2.5
+        experience: 3.0
       SUGAR:
         income: 2.0
         experience: 2.0
       CAKE:
-        income: 7.5
-        experience: 10.0
+        income: 9.5
+        experience: 15.0
       COOKIE:
         income: 2.5
         experience: 2.5
       GOLDEN_APPLE:
         income: 50.0
-        experience: 10.0
+        experience: 15.0
       MELON_BLOCK:
         income: 2.0
-        experience: 2.0
+        experience: 5.0
     custom-kill:
       Farmer:
         income: 10.0
         experience: 20.0
+  TECH:
+    fullname: Tech
+    shortname: tech
+    description: Earns money fixing the server.
+    ChatColour: DARK_GRAY
+    chat-display: full
+    max-level: 75
+    slots: 1
+    leveling-progression-equation: 1000*((1.1+(0.01*(numjobs-1)))^(joblevel-1))
+    income-progression-equation: baseincome*((1.05)^(joblevel-1))
+    experience-progression-equation: baseexperience*((1.05)^(joblevel-1))
+    Break:
+      LOG:
+        income: 1.0
+        experience: 1.0
+      STONE:
+        income: 1.0
+        experience: 1.0
   None:
     fullname: None
     shortname: N
