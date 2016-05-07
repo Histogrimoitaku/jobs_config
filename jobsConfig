@@ -44,49 +44,16 @@ Jobs:
         income: 7.5
         experience: 7.5
       MOSSY_COBBLESTONE:
-        income: 4.0
-        experience: 5.0
-      SAPLING:
-        income: -0.5
-        experience: -0.5
+        income: 0.7
+        experience: 1.0
     Craft:
       RAILS:
         income: 1.0
         experience: 1.0
     Place:
-      IRON_ORE:
-        income: -2.0
-        experience: -4.0
-      GOLD_ORE:
-        income: -2.0
-        experience: -5.0
-      DIAMOND_ORE:
-        income: -6.0
-        experience: -6.0
-      LAPIS_ORE:
-        income: -4.0
-        experience: -5.0
-      COAL_ORE:
-        income: -0.8
-        experience: -3.0
-      GLOWING_REDSTONE_ORE:
-        income: -2.0
-        experience: -3.0
-      MOSSY_COBBLESTONE:
-        income: -4.0
-        experience: -5.0
       SAPLING:
         income: 0.5
         experience: 0.5
-      LOG:
-        income: -0.5
-        experience: -1.5
-      STONE:
-        income: -0.5
-        experience: -2.0
-      OBSIDIAN:
-        income: -4.0
-        experience: -4.0
   Blacksmith:
     fullname: Blacksmith
     shortname: B
@@ -168,6 +135,67 @@ Jobs:
       GOLD_INGOT:
         income: 2.0
         experience: 2.0
+    Repair:
+      WOOD_SWORD:
+        income: 2.0
+        experience: 2.0
+      IRON_SWORD:
+        income: 4.0
+        experience: 4.0
+      GOLD_SWORD:
+        income: 6.0
+        experience: 6.0
+      DIAMOND_SWORD:
+        income: 8.0
+        experience: 8.0
+      LEATHER_BOOTS:
+        income: 2.0
+        experience: 4.0
+      LEATHER_CHESTPLATE:
+        income: 4.0
+        experience: 8.0
+      LEATHER_HELMET:
+        income: 2.5
+        experience: 5
+      LEATHER_LEGGINGS:
+        income: 3.5
+        experience: 7.0
+      GOLD_BOOTS:
+        income: 8.0
+        experience: 8.0
+      GOLD_CHESTPLATE:
+        income: 16.0
+        experience: 16.0
+      GOLD_HELMET:
+        income: 10.0
+        experience: 10.0
+      GOLD_LEGGINGS:
+        income: 14.0
+        experience: 14.0
+      IRON_BOOTS:
+        income: 4.0
+        experience: 8.0
+      IRON_CHESTPLATE:
+        income: 8.0
+        experience: 16.0
+      IRON_HELMET:
+        income: 5.0
+        experience: 10.0
+      IRON_LEGGINGS:
+        income: 7.0
+        experience: 14.0
+      DIAMOND_BOOTS:
+        income: 12.0
+        experience: 22.0
+      DIAMOND_CHESTPLATE:
+        income: 24.0
+        experience: 40.0
+      DIAMOND_HELMET:
+        income: 15.0
+        experience: 30.0
+      DIAMOND_LEGGINGS:
+        income: 21.0
+        experience: 40.0
   Farmer:
     fullname: Farmer
     shortname: Fa
@@ -191,18 +219,6 @@ Jobs:
       LOG:
         income: 0.5
         experience: 1.5
-      PUMPKIN_STEM:
-        income: -2.0
-        experience: -2.0
-      CROPS-0:
-        income: -1.0
-        experience: -2.5
-      SUGAR_CANE_BLOCK:
-        income: -0.5
-        experience: -0.8
-      SAPLING:
-        income: -1.0
-        experience: -1.5
     Place:
       PUMPKIN_STEM:
         income: 2.0
@@ -210,24 +226,9 @@ Jobs:
       CROPS-0:
         income: 1.0
         experience: 2.5
-      SUGAR_CANE_BLOCK:
-        income: 0.5
-        experience: 0.8
       SAPLING:
         income: 1.0
         experience: 1.5
-      MELON_BLOCK:
-        income: -1.5
-        experience: -3.5
-      PUMPKIN:
-        income: -2.0
-        experience: -4.0
-      SNOW:
-        income: -1.0
-        experience: -1.0
-      LOG:
-        income: -0.5
-        experience: -1.5
     Craft:
       BOWL:
         income: 2.0
@@ -285,16 +286,10 @@ Jobs:
       LOG:
         income: 0.5
         experience: 1.5
-    Place:
-      DIRT:
-        income: -0.5
-        experience: -0.5
-      SAND:
-        income: -0.5
-        experience: -0.5
-      LOG:
-        income: -0.5
-        experience: -1.5
+    Smelt:
+      COOKED_FISH:
+        income: 2.0
+        experience: 2.0
   Knight:
     fullname: Knight
     shortname: K
@@ -337,36 +332,13 @@ Jobs:
         income: 2.0
         experience: 1.0
     Craft:
-      WOOD_SWORD:
-        income: 0.5
-        experience: 2.0
-      STONE_SWORD:
-        income: 1.0
-        experience: 4.0
-      GOLD_SWORD:
-        income: 2.0
-        experience: 6.0
-      IRON_SWORD:
-        income: 3.0
-        experience: 7.0
-      DIAMOND_SWORD:
-        income: 7.5
-        experience: 7.5
+      HAY_BLOCK:
+        income: 2.25
+        experience: 2.25
     Break:
       MOB_SPAWNER:
         income: 10.0
         experience: 10.0
-    Place:
-      MOB_SPAWNER:
-        income: -10.0
-        experience: -10.0
-    Craft:
-      HAY_BLOCK:
-        income: 2.25
-        experience: 2.25
-      WHEAT:
-        income: -0.25
-        experience: -0.25
   Ranger:
     fullname: Ranger
     shortname: R
@@ -415,12 +387,6 @@ Jobs:
       LOG:
         income: 0.5
         experience: 1.5
-      SAPLING:
-        income: -1.0
-        experience: -1.0
-      WOOD:
-        income: -2.0
-        experience: -2.0
     Place:
       SAPLING:
         income: 1.0
@@ -428,9 +394,6 @@ Jobs:
       WOOD:
         income: 2.0
         experience: 2.0
-      LOG:
-        income: -0.5
-        experience: -1.5
     Craft:
       BOW:
         income: 3.0
@@ -602,70 +565,6 @@ Jobs:
       STAINED_GLASS_PANE:
         income: 1.0
         experience: 2.5
-    Break:
-      COBBLESTONE:
-        income: -0.2
-        experience: -1.0
-      WOOD:
-        income: -0.6
-        experience: -1.5
-      FENCE:
-        income: -1.0
-        experience: -1.5
-      WOOL:
-        income: -0.8
-        experience: -1.5
-      GLOWSTONE:
-        income: -1.1
-        experience: -3.0
-      SANDSTONE:
-        income: -1.0
-        experience: -2.0
-      GLASS:
-        income: -1.0
-        experience: -2.5
-      BRICK:
-        income: -1.75
-        experience: -4.0
-      LAPIS_BLOCK:
-        income: -1.8
-        experience: -4.0
-      DOUBLE_STEP:
-        income: -0.6
-        experience: -2.0
-      STEP:
-        income: -0.6
-        experience: -2.0
-      BOOKSHELF:
-        income: -1.5
-        experience: -6.0
-      WOOD_STAIRS:
-        income: -0.8
-        experience: -2.0
-      COBBLESTONE_STAIRS:
-        income: -0.3
-        experience: -2.0
-      MOSSY_COBBLESTONE:
-        income: -0.2
-        experience: -5.0
-      DIAMOND_BLOCK:
-        income: -2.5
-        experience: -7.0
-      GOLD_BLOCK:
-        income: -2.0
-        experience: -5.0
-      HARD_CLAY:
-        income: -1.75
-        experience: -3.5
-      THIN_GLASS:
-        income: -0.5
-        experience: -1.0
-      STAINED_GLASS:
-        income: -1.0
-        experience: -2.5
-      STAINED_GLASS_PANE:
-        income: -1.0
-        experience: -2.5
   None:
     fullname: None
     shortname: N
